@@ -25,7 +25,7 @@ No output
 ## Example usage
 
 ```yaml
-uses: lagrowthmachine/deployment-status-updater-public@v1.1
+uses: lagrowthmachine/deployment-status-updater-action-public@v1.0
 with:
   token: 'xxxxx'
   deployment_id: '182938298' #or steps.deployment.outputs.deployment_id
