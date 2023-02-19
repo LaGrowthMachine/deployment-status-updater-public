@@ -8,7 +8,7 @@ inputs:
     description: 'Github token'
     required: true
   deployment_id: # The id to deploy.
-    description: 'The ref to deploy. This can be a branch, tag, or SHA.'
+    description: 'The id of deployment.'
     required: true
   status: #Can be one of: error, failure, inactive, in_progress, queued, pending, success
     description: 'Can be one of: error, failure, inactive, in_progress, queued, pending, success'
