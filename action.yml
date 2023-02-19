@@ -1,0 +1,18 @@
+name: 'deployment-status-updater-action-public'
+description: 'Update deployment status'
+branding:
+  icon: 'arrow-up-circle'
+  color: 'blue'
+inputs:
+  token: # github token that can create deployment. Test it before
+    description: 'Github token'
+    required: true
+  deployment_id: # The id to deploy.
+    description: 'The ref to deploy. This can be a branch, tag, or SHA.'
+    required: true
+  status: #Can be one of: error, failure, inactive, in_progress, queued, pending, success
+    description: 'Can be one of: error, failure, inactive, in_progress, queued, pending, success'
+outputs: #No output
+runs:
+  using: 'node16'
+  main: './build/index.js'
