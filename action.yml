@@ -12,7 +12,6 @@ inputs:
     required: true
   status: #Can be one of: error, failure, inactive, in_progress, queued, pending, success
     description: 'Can be one of: error, failure, inactive, in_progress, queued, pending, success'
-outputs: #No output
 runs:
   using: 'node16'
   main: './build/index.js'
